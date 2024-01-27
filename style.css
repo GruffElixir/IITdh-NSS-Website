@@ -1,24 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
+    background-color: black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
     margin: 0;
-    background-color: rgb(255, 253, 248);
+    padding: 0;
+    box-sizing: border-box;
+  
 }
-.navbar{
-    font-size: 20px;
+@font-face{
+	font-family:"serif";
+	src: url(static/Hahmlet-Regular.ttf);
+	font-style: normal;
+	font-weight: 100;
+}
+
+main{
+    font-family:"serif";
+}
+.big-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family:"serif";
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    background-color: #282b8f;
+}
+.slider{
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+}
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    ;
+    justify-content: center;
+    align-items: center;
 }
-.navbar > div > img{
-    width: 40px;
-    vertical-align: middle;
+.intro-text{
+    color: rgb(233, 233, 233);
+    font-family:"serif";
+    font-size: 5rem;
 }
-.logo {
-    margin-left: 20px;
-    margin-right: 200px;
+.hide{
+    background: black;
+    overflow: hidden;
 }
-.navbtn{
-    margin-left: 50px;
-    margin-top: 10px;
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
 }
