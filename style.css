@@ -120,7 +120,7 @@ main{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 98vh;
 }
 
 .descr{
