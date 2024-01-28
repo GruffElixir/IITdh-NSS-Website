@@ -28,7 +28,7 @@ main{
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: 3rem;
-    font-family:Antonio;
+    font-family:Lobster;
     color: white;
 
 }
@@ -59,7 +59,7 @@ main{
 }
 @media screen and (min-width: 601px){
     .text{
-      font-size: 8vw;
+      font-size: 7vw;
       color: black;
     }
 }
@@ -122,11 +122,23 @@ main{
     background-size: cover;
     min-height: 700px;
 }
+
 .descr{
     justify-content: center;
     font-family: Antonio;
-
 }
+.descr h2{
+    margin-top: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+}
+.descr p {
+    text-align: center;
+    font-size: 1.4vw;
+}
+
 @media screen and (max-width: 600px) {
     .nav-collapse a{display: none;}
     .nav-collapse a.icon {
@@ -174,3 +186,5 @@ main{
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
+
