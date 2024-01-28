@@ -132,11 +132,11 @@ main{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 3vw;
+    font-size: 5vh;
 }
 .descr p {
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 2.5vh;
 }
 
 @media screen and (max-width: 600px) {
