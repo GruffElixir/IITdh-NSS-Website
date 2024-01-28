@@ -67,7 +67,7 @@ main{
 @media screen and (max-width: 600px){
     .text{
         font-size: 50%;
-      color: black;
+        color: black;
     }
 }
 .hide{
