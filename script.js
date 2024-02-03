@@ -37,10 +37,11 @@ function isInViewport(element) {
   // Checking part. Here the code checks if it's *fully* visible
   // Edit this part if you just want a partial visibility
   if (
-      //bounding.top >= 0 &&
-      bounding.left >= 0 &&
-      bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      // bounding.top >= 0 &&
+      // bounding.left >= 0 &&
+      // bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+      // bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      bounding.top <= (window.innerHeight|| document.documentElement.clientHeight)
   ) {
       console.log('In the viewport! :)');
       return true;
@@ -63,11 +64,11 @@ function countAnim(){
       const target = +counter.getAttribute("data-target");
       const c = +counter.innerText;
 
-      const increment = target / 400;
+      const increment = target / 800;
 
       if (c < target) {
         counter.innerText = `${Math.ceil(c + increment)}`;
-        setTimeout(updateCounter, 1);
+        setTimeout(updateCounter, 5);
       } else {
         counter.innerText = target;
       }
