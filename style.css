@@ -2,6 +2,9 @@ html {
   overflow: auto;
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 body{
     background-color: rgb(255, 255, 255);
     overflow-y: scroll;
@@ -202,7 +205,7 @@ main{
     top:100px;
 }
 .container2 p {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-align: center;
@@ -210,8 +213,23 @@ main{
 }
 .container2 p span.typed-text{
     font-weight: normal;
-    color: white;
+    font-size: 1.5rem;
 }
+@media screen and (min-width:1000px){
+  .container2 p span.typed-text{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+.container2 p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+}
+
+
   
 .container2 p span.cursor.typing{
     animation: none;
@@ -224,18 +242,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 min-width: 100%;
 }
-/********gallery*********/
-#ocgallery {
-    opacity: 1;
-    transition: opacity 2s;
-    width: 100%;
-    height: 100%;
-}  
-#ocgallery.hide {
-    opacity: 0;
-    transition: width 2s, height 4s;
-    
-}
+
 /***for the row n column for gallery**/
 .ocrow {
     margin: 3px ;
@@ -264,9 +271,10 @@ min-width: 100%;
   
   /* Content */
   .occontent {
-    background-color: #171717;
+    background-color: rgb(45, 25, 25);
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 3px 0 rgba(0, 0, 0, 0.19);
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -283,173 +291,128 @@ min-width: 100%;
       width: 100%;
     }
   }
-  
-  /****************oc images hovereffect**********/
-  
-  .hovereffect {
-      width: 100%;
-      max-height: 500px;
-      float: left;
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      cursor: default;
-  
+/**************single pic row***************/
+.mainrow {
+  margin: 3px ;
+}
+
+/* Add padding BETWEEN each column */
+.mainrow,
+.mainrow > .maincolumn {
+  padding: 3px;
+}
+
+/* Create four equal columns that floats next to each other */
+.maincolumn {
+  width: 40%;
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+
+/* Clear floats after rows */ 
+.mainrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.maincontent {
+  background-color: rgb(45, 25, 25);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .maincolumn {
+    width: 33%;
+  margin-left: 0.33333%;
   }
-.hovereffect .overlay {
-    width: 80%;
-    position: absolute;
-    overflow: hidden;
-    
-    top: auto;
-    bottom: 0;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;  
-    height: 30px;
-    background-color: rgba(249, 249, 249, 0.7);
-    
-    visibility: visible;
-  
 }
-  
-.hovereffect img {
-    display: block;
-    position: relative;
-    max-height: 500px;
-    width: 80%;
-      
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .maincolumn {
+    width: 100%;
+  }
 }
-  
-  
-.hovereffect a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    text-transform: uppercase;
-    
-    margin: 50px 0 0 0;
-    background-color: transparent;
-}
-.hovereffect a.info:hover {
-    box-shadow: 0 0 5px #fff;
-}
-  
-  
-.hovereffect p.icon-links a {
-    float: right;
-    
-    font-size: 1.4em;
-}
-  
-.hovereffect:hover p.icon-links a:hover,
-.hovereffect:hover p.icon-links a:focus {
-    color: #252d31;
-}
-  
-.hovereffect h2,
-.hovereffect p.icon-links a {
-   
-    visibility: visible;
-}
-  
-.hovereffect p.icon-links a span {
-    display: inline-block;
-    padding: 8px 10px;
-    visibility: visible;;
-}
-/***for the row n column for gallery**/
-.firstrow {
+  /*******************second row**********/
+  .secondrow {
     margin: 3px ;
   }
   
   /* Add padding BETWEEN each column */
-  .firstrow,
-  .firstrow > .firstcolumn {
+  .secondrow,
+  .secondrow > .secondcolumn1 {
     padding: 3px;
   }
-  
+  .secondrow,
+  .secondrow > .secondcolumn2 {
+    padding: 3px;
+  }
   /* Create four equal columns that floats next to each other */
-  .firstcolumn {
+  .secondcolumn1 {
+    float: right;
+    width: 35%;
+    margin-right: 14.75%;
+    margin-bottom: 5px;
+  }
+  .secondcolumn2 {
     float: left;
-    width: 24.7%;
-    margin-right: 0.3%;
+    width: 35%;
+    margin-left: 14.75%;
     margin-bottom: 5px;
   }
   
   /* Clear floats after rows */ 
-  .firstrow:after {
+  .secondrow:after {
     content: "";
     display: table;
     clear: both;
   }
   
   /* Content */
-  .firstcontent {
-    background-color: #171717;
+  .secondcontent {
+    background-color: rgb(45, 25, 25);
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 900px) {
-    .firstcolumn {
-      width: 49.7%;
-      margin-right: 0.3%;
+    .secondcolumn1 {
+      width: 35%;
+      margin-right: 14.5%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .secondcolumn2 {
+      width: 35%;
+      margin-left: 14.5%;
+      
     }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .firstcolumn {
+    .secondcolumn1 {
+      float: none;
       width: 100%;
     }
   }
-  
-  
-  .srow {
-    margin: 3% ;
-  }
-  .srow,
-  .srow > .scolumn {
-    padding: 3%;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-  .scolumn {
-    float: left;
-    width: 50%;
-    margin-bottom: 10px;
-  
-  }
-  
-  /* Clear floats after rows */ 
-  .srow:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .scontent {
-    background-color: #171717;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .scolumn {
-      width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .scolumn {
-      width: 100%;  
-    }
+    .secondcolumn2 {
+      float: right;
+     width: 100%;
   }
+    
+  }
+  
+  
+
 .landing {
     min-height: 100vh;
     background: black;
@@ -606,25 +569,7 @@ min-width: 100%;
     background-color: #555;
   }
 
-::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-    background-color: #F5F5F5;
-    border-radius: 10px;
-}
-  
-::-webkit-scrollbar
-{
-    width: 10px;
-    background-color: #F5F5F5;
-}
-  
-::-webkit-scrollbar-thumb
-{
-    border-radius: 10px;
-    background-color: #FFF;
-    background-image: -webkit-linear-gradient(top, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%);
-}
+
 
 .site-footer
 {
@@ -817,6 +762,3 @@ min-width: 100%;
     flex-direction: column;
   }
 }
-
-
-

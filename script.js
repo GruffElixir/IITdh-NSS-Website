@@ -1,3 +1,4 @@
+
 /***********************web intro**************/
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
@@ -34,14 +35,23 @@ const newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
+// Define the colors
+const colors = ["rgb(112, 10, 10)", "rgba(51,41,101,255)"];
+let currentColorIndex = 0; // Initialize the color index
+
 function type() {
+  // Change color only when typing a new word
+  if (charIndex === 0) {
+    typedTextSpan.style.color = colors[currentColorIndex];
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+  }
+
   if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
-  } 
-  else {
+  } else {
     cursorSpan.classList.remove("typing");
     setTimeout(erase, newTextDelay);
   }
@@ -49,22 +59,23 @@ function type() {
 
 function erase() {
   if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
     charIndex--;
     setTimeout(erase, erasingDelay);
-  } 
-  else {
+  } else {
     cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    textArrayIndex = (textArrayIndex + 1) % textArray.length; // Move to the next word
     setTimeout(type, typingDelay + 1100);
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
+document.addEventListener("DOMContentLoaded", function () {
+  // On DOM Load initiate the effect
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
 
 /*********************landing section*********/
 let sections = document.querySelectorAll(".section");
