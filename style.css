@@ -549,7 +549,8 @@ min-width: 100%;
     background-color:#FFF;
     color:#53c5ff;}
   .fas fa-shopping-cart  {
-    background-color:#FFF;}	
+    background-color:#FFF;
+  }	
   #myBtn {
     height:50px;
     display: none;
@@ -771,3 +772,16 @@ min-width: 100%;
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

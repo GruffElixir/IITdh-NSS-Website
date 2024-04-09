@@ -36,7 +36,7 @@ let textArrayIndex = 0;
 let charIndex = 0;
 
 // Define the colors
-const colors = ["rgb( 255, 151, 65 )", "rgb(256, 256, 256)", "rgb(38, 208, 0)"];
+const colors = ["rgb(255, 103, 31)", "rgb(256, 256, 256)", "rgb(4, 106, 56)"];
 let currentColorIndex = 0; // Initialize the color index
 
 function type() {
