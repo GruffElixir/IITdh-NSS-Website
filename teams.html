@@ -20,26 +20,27 @@
     <main>
       <div class="navbar">
             <div class="logo">
-                <img src="nss.svg">
+                <img src="nss.svg" onclick="location.href = 'nss.html';">
                 NSS
             </div>
             <div class="nav-collapse" id="topnav">
-                <a class="nav2 navbtn">About</a>
-                <a class="nav3 navbtn">Teams</a>
-                <a class="nav4 navbtn">Events</a>
-                <a class="nav5 navbtn">Contact Us</a>
-                <a class="icon" onclick="navResponsive()">
-                    <div class="ham" onclick="hamAnimate(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </a>
+              <a class="nav2 navbtn">About</a>
+              <a class="nav3 navbtn" onclick="location.href = 'teams.html';">Teams</a>
+              <a class="nav4 navbtn">Events</a>
+              <a class="nav5 navbtn" onclick="location.href = 'contact.html';">Contact Us</a>
+              <a class="icon" onclick="navResponsive()">
+                <div class="ham" onclick="hamAnimate(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </a>
+            </div>
             </div>
       </div>
         
 
-        <div class="galleryBody"  style="background-color: rgb(220, 219, 213);">
+        <div class="galleryBody"  style="background-color: rgb(255, 255, 255);">
           <div class="gallery" style="width: 100%;" >
             <h1 style="color: black; text-align: center; padding-top: 10px;" data-aos="fade-up" data-aos-duration="1000">Teams</h1>    
               <div id="mainrowID" class="mainrow">
@@ -71,14 +72,8 @@
                   </div>
                   </div>
                 </div>
-              </div>
-          
-              
+              </div>   
           </div>
-            
-            
-          
-          
           <h1 style="color: black; text-align: center; padding-top: 10px;" data-aos="fade-up" data-aos-duration="1000">Teams</h1>
           <div class="gallery" style="width: 100%;" >
               
@@ -123,16 +118,6 @@
               <h5 style="text-align: center; color: white;">nss bosrike</h5>
               <div class="wrapper" style="text-align: center;">
                 <div class="button">
-           
-                  <div class="icon"><i href="" target="_blank" class="fab fa-facebook-f"></i></div>
-                </div>
-                <div class="button">
-                  <div class="icon"><i href="" target="_blank" class="fab fa-twitter"></i></div>
-                </div>
-                <div class="button">
-                  <div class="icon"><i href="" target="_blank" class="fab fa-instagram"></i></div>
-                </div>
-          
               </div>
             </div>
               </div>
@@ -260,25 +245,12 @@
             </div>
         
             <div class="col-xs-6 col-md-3">
-              <h6>Categories</h6>
-              <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-              </ul>
-            </div>
-        
-            <div class="col-xs-6 col-md-3">
               <h6>Quick Links</h6>
               <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              <li><a >About Us</a></li>
+              <li><a onclick="location.href = 'contact.html';">Contact Us</a></li>
+              <li><a onclick="location.href = 'teams.html';">Teams</a></li>
+              <li><a >Events</a></li>
               </ul>
             </div>
             </div>

@@ -144,7 +144,13 @@ main{
 .descr p {
     text-align: center;
     font-size: 2.5vh;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.contact{
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -415,7 +421,7 @@ min-width: 100%;
 
 .landing {
     min-height: 100vh;
-    background: black;
+    background: rgb(0, 0, 0);
     background-size: cover;
     padding: 0rem 10px 10px 10px;
     padding-top: 10px;
