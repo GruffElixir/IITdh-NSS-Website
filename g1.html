@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css">
+		<link rel="icon" href="nss.svg" type="logo1.png" sizes="16x16">
+		<title>NSS IIT Dharwad</title>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        ::-webkit-scrollbar {
+  display: none;
+}
+        img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+        img:hover {
+            opacity: 0.8;
+            background-color: black;
+        }
+        .gallery{
+            padding: 5px;
+        }
+        .content{
+            cursor: pointer;
+            margin-top: 0;
+            opacity: 1;
+            margin-bottom: 2rem;
+        }
+
+        /* Popup section */
+        .popup {
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.829);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out 0.2s;
+        }
+        .pop {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out 0s;
+        }
+        .container.pop{
+            filter: blur(10px);
+            z-index: 0;                
+        }
+        .pop>article{
+            min-width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+        }
+        .popup img{
+            width: 100%;
+            z-index: 5;
+            animation: popup 0.3s linear both;
+        }
+        .close-btn{
+            background: gray;
+            border-radius: 100%;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            transition: background 0.5s ease;
+            animation: popup 0.3s linear 0.3s both;
+        }
+        .close-btn:hover{
+            background: black;
+        }
+        .icon-cancel::before{
+            position: relative;
+            top: -0.05px;
+        }
+        .closepopup{
+            animation: closepopup 1s linear both;
+        }
+        @keyframes popup{
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes closepopup{
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+      <div class="navbar">
+            <div class="logo">
+                <img src="nss.svg">NSS
+            </div>
+            <div class="nav-collapse" id="topnav">
+                <a class="nav2 navbtn">About</a>
+                <a class="nav3 navbtn">Teams</a>
+                <a class="nav4 navbtn">Events</a>
+                <a class="nav5 navbtn">Contact Us</a>
+                <a class="icon" onclick="navResponsive()">
+                    <div class="ham" onclick="hamAnimate(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+            </div>
+      </div>
+      
+      <div id="yuva" class="container">
+        <h1 style="text-align: center; margin-top: 5%; color: black;">Yuva Samvad- India@2047</h1>
+        <div class="gallery row d-flex align-items-center">
+            <div class="content col-lg-4">
+                <img src="gallery/yuva1.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/yuva2.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/yuva3.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/yuva4.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/yuva5.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/yuva6.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/yuva7.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/yuva8.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/yuva9.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="ymun" class="container">
+        <h1 style="text-align: center; margin-top: 5%;color: black;">Yuvamanthan Model United Nations(YMUN)<br> Viksit Bharat@2047</h1>
+        <div class="gallery row d-flex align-items-center">
+            <div class="content col-lg-6">
+                <img src="gallery/mun4.jpg" alt="">
+            </div>
+            <div class="content col-lg-6">
+                <img src="gallery/mun2.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun11.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun12.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun3.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun1.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun5.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun6.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun7.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun8.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/mun9.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="clean" class="container">
+        <h1 style="text-align: center; margin-top: 5%;color: black;">Cleanliness Drive at IIT Dharwad</h1>
+        <div class="gallery row d-flex align-items-center">
+            <div class="content col-lg-6">
+                <img src="gallery/drive8.jpg" alt="">
+            </div>
+            <div class="content col-lg-6">
+                <img src="gallery/drive9.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive1.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive2.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive3.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive4.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive5.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive6.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive7.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive10.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/drive11.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="eteg" class="container">
+        <h1 style="text-align: center; margin-top: 5%; color: black;">Ek Tareekh Ek Ghanta(ETEG)</h1>
+        <div class="gallery row d-flex align-items-center">
+            <div class="content col-lg-6">
+                <img src="gallery/clean2.jpg" alt="">
+            </div>
+            <div class="content col-lg-6">
+                <img src="gallery/img2.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/eteg1.jpeg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/img1.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/clean1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="vote" class="container">
+        <h1 style="text-align: center; margin-top: 5%; color: black;">Voter Awareness Program</h1>
+        <div class="gallery row d-flex align-items-center">
+            <div class="content col-lg-4">
+                <img src="gallery/pled1.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/pled2.jpg" alt="">
+            </div>
+            <div class="content col-lg-4">
+                <img src="gallery/pled3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+      <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            </div>
+        
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              </ul>
+            </div>
+        
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              </ul>
+            </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+            <a href="#">Scanfcode</a>.
+              </p>
+            </div>
+        
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+    <script>
+         $(document).ready(function(){
+            
+            $('.content').on('click', function(){
+                open($(this));
+            });
+
+            $(document).on('click', '.popup img', function(){
+                return false;
+            }).on('click', '.popup', function(){
+                close();
+            });
+
+            function open($content){
+                $('.container').addClass('pop');
+                var $gallery = $content.clone().prop({class:'popup'});
+                $('body').append($gallery);
+                $gallery.append('<div class="close-btn"><i class="icon-cancel"></i></div>');
+                $gallery.children().wrapAll("<article></article>");
+                
+                setTimeout(function(){
+                    $('.popup').addClass('pop');
+                }, 100);
+            }
+            function close(){
+                var $closer = $('article').find('img, .close-btn');
+                $closer.addClass('closepopup');
+                setTimeout(function(){
+                    $('.container').removeClass('pop');
+                    $('.popup').remove()
+                }, 200);
+            }
+        })
+    </script>
+</body>
+</html>
