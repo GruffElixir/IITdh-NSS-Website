@@ -144,7 +144,13 @@ main{
 .descr p {
     text-align: center;
     font-size: 2.5vh;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.contact{
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -415,7 +421,7 @@ min-width: 100%;
 
 .landing {
     min-height: 100vh;
-    background: black;
+    background: rgb(0, 0, 0);
     background-size: cover;
     padding: 0rem 10px 10px 10px;
     padding-top: 10px;
@@ -543,7 +549,8 @@ min-width: 100%;
     background-color:#FFF;
     color:#53c5ff;}
   .fas fa-shopping-cart  {
-    background-color:#FFF;}	
+    background-color:#FFF;
+  }	
   #myBtn {
     height:50px;
     display: none;
@@ -617,6 +624,9 @@ min-width: 100%;
 .footer-links a
 {
   color:#737373
+}
+.footer-links li:hover{
+  color: #007bb6;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -762,4 +772,3 @@ min-width: 100%;
     flex-direction: column;
   }
 }
-
