@@ -105,6 +105,7 @@ main{
 .logo {
     margin-left: 0px;
     margin-right: 20px;
+    display:flex;
 }
 .logo > a{
     display: inline;
@@ -117,7 +118,7 @@ main{
 }
 
 .navbtn:hover{
-    color: goldenrod;
+    color: rgb(218, 165, 32);
     text-decoration: none;
 }
 

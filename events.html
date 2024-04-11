@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css">
 		<link rel="icon" href="nss.svg" type="logo1.png" sizes="16x16">
 		<title>NSS IIT Dharwad</title>
-        <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet"> 
@@ -27,29 +28,30 @@
 </head>
 <body>
     <main>
-    <div style="z-index: 50;" class="navbar">
+      <div class="navbar">
         <div class="logo">
-            <img src="nss.svg">
+            <img src="nss.svg" onclick="location.href = 'nss.html';">
             NSS
         </div>
         <div class="nav-collapse" id="topnav">
-            <a class="nav2 navbtn">About</a>
-            <a class="nav3 navbtn">Teams</a>
-            <a class="nav4 navbtn">Events</a>
-            <a class="nav5 navbtn">Contact Us</a>
-            <a class="icon" onclick="navResponsive()">
-                <div class="ham" onclick="hamAnimate(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </a>
+          <a class="nav2 navbtn" onclick="location.href = 'nss.html';">About</a>
+          <a class="nav3 navbtn" onclick="location.href = 'teams.html';">Teams</a>
+          <a class="nav4 navbtn" onclick="location.href = 'events.html';">Events</a>
+          <a class="nav5 navbtn" onclick="location.href = 'contact.html';">Contact Us</a>
+          <a class="icon" onclick="navResponsive()">
+            <div class="ham" onclick="hamAnimate(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </a>
+        </div>
         </div>
   </div>
     <div class="desktop-display">
     <div class="img_container top_img">
         <img
-          src='gallery/event.JPG'
+          src='gallery/event.jpg'
           alt=""
         />
         <div class="main-section" style="width: 100%; background-color: black; padding: 0">
@@ -530,29 +532,21 @@
         <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>About</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-        </div>
-    
-        <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
-          <ul class="footer-links">
-          <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-          <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-          <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-          <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-          <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-          <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-          </ul>
+          <p class="text-justify">Welcome to the official website of the National Service Scheme (NSS) at 
+            the Indian Institute of Technology (IIT) Dharwad. Established with the aim of promoting 
+            social responsibility and community engagement among students, NSS IIT Dharwad is dedicated 
+            to making a positive impact on society through various outreach programs, initiatives, and 
+            collaborations. Our website serves as a platform to showcase our activities, share our 
+            vision and values, and engage with the community.</p>
         </div>
     
         <div class="col-xs-6 col-md-3">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-          <li><a href="http://scanfcode.com/about/">About Us</a></li>
-          <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-          <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-          <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-          <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          <li><a onclick="location.href = 'nss.html';">About Us</a></li>
+          <li><a onclick="location.href = 'contact.html';">Contact Us</a></li>
+          <li><a onclick="location.href = 'teams.html';">Teams</a></li>
+          <li><a onclick="location.href = 'events.html';">Events</a></li>
           </ul>
         </div>
         </div>
@@ -561,18 +555,8 @@
       <div class="container">
         <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-        <a href="#">Scanfcode</a>.
+          <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved
           </p>
-        </div>
-    
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
         </div>
         </div>
       </div>

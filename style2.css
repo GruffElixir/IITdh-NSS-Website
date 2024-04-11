@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 
 /* CSS RESET */
-* {
-  box-sizing: border-box;
-}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -13,7 +10,7 @@ body {
   font-family: "Inter", sans-serif;
 
   overflow-x: hidden;
-  background-color: rgb(220, 219, 213);
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
@@ -31,11 +28,11 @@ hr {
 
 
 
-p {
+.mobile-display .desktop-display p {
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 2;
-  font-weight: 200;
+  /* font-weight: 200; */
 }
 
 
@@ -117,7 +114,7 @@ section .tWrap {
   100% { opacity: 0; scale: 1.5; }
 }
 /********navbar***/
-.navbar{
+/* .navbar{
   font-size: 20px;
   color: rgb(255, 255, 255);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
@@ -215,7 +212,7 @@ section .tWrap {
     object-fit: contain;
   /* or
     object-fit: cover; */
-}
+} 
 /*********cards***********/
 .container {
     display: flex;
@@ -300,7 +297,7 @@ section .tWrap {
 .stage a:hover:after {
       color:#231f20;
 }
-/*******footer********/
+/* ******footer*******
 .site-footer
 {
   background-color:#17171a;
@@ -463,4 +460,4 @@ section .tWrap {
     margin-right:0;
     font-weight:600
   }
-}
+} */
