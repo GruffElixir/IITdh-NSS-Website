@@ -12,33 +12,39 @@
 		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 		
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<script>history.scrollRestoration = "manual"</script> 
 	</head>
 	<body>
+		
 		<main>
-			<div class="navbar">
-				<div class="logo">
-					<img src="nss.svg" onclick="location.href = 'nss.html';">
-					NSS
-				</div>
-				<div class="nav-collapse" id="topnav">
-					<a class="nav2 navbtn" onclick="location.href = 'nss.html';">About</a>
-					<a class="nav3 navbtn" onclick="location.href = 'teams.html';">Teams</a>
-					<a class="nav4 navbtn" onclick="location.href = 'events.html';">Events</a>
-					<a class="nav5 navbtn" onclick="location.href = 'contact.html';">Contact Us</a>
-					<a class="icon" onclick="navResponsive()">
-						<div class="ham" onclick="hamAnimate(this)">
-							<div class="bar1"></div>
-							<div class="bar2"></div>
-							<div class="bar3"></div>
-						</div>
-					</a>
-				</div>
+			<div data-aos="fade-right" data-aos-delay="1700">
+			<div id="navbar" class="navbar">
+			<div class="logo">
+				<img src="nss.svg" onclick="location.href = 'nss.html';">
+				NSS
 			</div>
+			<div class="nav-collapse" id="topnav">
+				<a class="nav2 navbtn" onclick="location.href = 'index.html';">Home</a>
+				<a class="nav3 navbtn" onclick="location.href = 'teams.html';">Teams</a>
+				<a class="nav4 navbtn" onclick="location.href = 'events.html';">Events</a>
+				<a class="nav5 navbtn" onclick="location.href = 'contact.html';">Contact Us</a>
+				<a class="nav6 navbtn" onclick="location.href = 'g1.html';">Gallery</a>
+				<a class="icon" onclick="navResponsive()">
+					<div class="ham" onclick="hamAnimate(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
 			<div class="home">
 			</div>
 			<div class="middle">
@@ -47,7 +53,8 @@
 					<div style="padding-top: 5%"><p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p></div>
 				</div>
 			</div>
-			<div class="descr">
+		</div>
+			<div data-aos="fade-up" class="descr">
 				<h2>Our vision</h2>
 				<p>Our vision at NSS (National Service Scheme) IIT Dharwad is to foster a culture of service, empathy, and community 
 					engagement among the students. We envision a society where every individual is empowered to make a positive impact 
@@ -59,13 +66,13 @@
 					 I shall never resort to violence and that all differences and disputes relating to the religion, language, region 
 					 or political or economic graveness shall be settled by peaceful and constitutional manner.”</p>
 			</div>
-			<div class="sticky-icon">
+			<div data-aos="fade-left" data-aos-delay="1700" class="sticky-icon">
 				<a href="https://www.instagram.com/iit_dharwad_nss_unit/" class="Instagram"><i class="fab fa-instagram"></i> </a>
 				<a href="https://www.facebook.com/iitdharwadofficial/" class="Facebook"><i class="fab fa-facebook-f"> </i></a>
 				<!-- <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i></a> -->
 				<a href="https://twitter.com/iitdhrwd" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a>   
 			 </div>
-			 <div class="counter-wrapper">
+			 <div data-aos="fade-up" class="counter-wrapper">
 				<div class="counter-container">
 				<i class="fab fa-twitter fax-3x"></i>
 				<div class="counter" data-target="8600"></div>
@@ -84,7 +91,7 @@
 				<span>Facebook Fans</span>
 			  </div>
 			</div>
-			<footer class="site-footer">
+			<footer data-aos="fade-right" class="site-footer">
 				<div class="container">
 					<div class="row">
 					<div class="col-sm-12 col-md-6">
@@ -134,7 +141,7 @@
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>

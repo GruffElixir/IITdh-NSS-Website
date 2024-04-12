@@ -33,7 +33,7 @@ main{
     transform: translate(-50%, -50%);
     font-size: 7vmin;
     font-family:Lobster;
-    color: white;
+    color: black;
 
 }
 .slider{
@@ -120,10 +120,11 @@ main{
 .navbtn:hover{
     color: rgb(218, 165, 32);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .home{
-    background-image: url('home-bg.jpg');
+    background-image: url('c1.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,9 +203,9 @@ main{
     transform: translate(0, -11px) rotate(45deg);
 }
 .container2 {
-    background-color: rgba(218, 195, 195, 0.587);
+    background-color: rgba(255, 255, 255, 0.587);
     -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(2px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,7 +481,7 @@ min-width: 100%;
   .sticky-icon  {
     z-index:1;
     position:fixed;
-    top:15%;
+    top:30%;
     right:0%;
     width:220px;
     display:flex;

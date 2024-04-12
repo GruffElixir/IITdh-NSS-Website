@@ -36,7 +36,7 @@ let textArrayIndex = 0;
 let charIndex = 0;
 
 // Define the colors
-const colors = ["rgb(255, 103, 31)", "rgb(256, 256, 256)", "rgb(4, 106, 56)"];
+const colors = ["rgb(255, 103, 31)", "rgb(110, 110, 110)", "rgb(4, 106, 56)"];
 let currentColorIndex = 0; // Initialize the color index
 
 function type() {
@@ -165,3 +165,4 @@ $(document).ready(function () {
       $('.hover-div').stop().fadeTo('fast', 1);
   });
 });
+/************nav scroll effect */

@@ -9,49 +9,46 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css">
 		<link rel="icon" href="nss.svg" type="logo1.png" sizes="16x16">
 		<title>NSS IIT Dharwad</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="style2.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
       h4{
         text-align: center;
       }
-      p{
-        text-align: justify;
-      }
     </style>
 </head>
 <body>
     <main>
-      <div class="navbar">
+    <div style="z-index: 50;" class="navbar">
         <div class="logo">
-            <img src="nss.svg" onclick="location.href = 'nss.html';">
+            <img src="nss.svg">
             NSS
         </div>
         <div class="nav-collapse" id="topnav">
-          <a class="nav2 navbtn" onclick="location.href = 'nss.html';">About</a>
+          <a class="nav2 navbtn" onclick="location.href = 'index.html';">Home</a>
           <a class="nav3 navbtn" onclick="location.href = 'teams.html';">Teams</a>
           <a class="nav4 navbtn" onclick="location.href = 'events.html';">Events</a>
           <a class="nav5 navbtn" onclick="location.href = 'contact.html';">Contact Us</a>
-          <a class="icon" onclick="navResponsive()">
-            <div class="ham" onclick="hamAnimate(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-          </a>
-        </div>
+          <a class="nav6 navbtn" onclick="location.href = 'g1.html';">Gallery</a>
+            <a class="icon" onclick="navResponsive()">
+                <div class="ham" onclick="hamAnimate(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
         </div>
   </div>
     <div class="desktop-display">
     <div class="img_container top_img">
         <img
-          src='gallery/event.jpg'
+          src='gallery/event.JPG'
           alt=""
         />
         <div class="main-section" style="width: 100%; background-color: black; padding: 0">
@@ -70,7 +67,7 @@
             
           </div>
           <div class="container">
-            <section class="hover-div">
+            <section data-aos="fade-right" class="hover-div">
             <div class="card">
               <div class="card__header">
                 <img style="max-width: 100%;
@@ -91,7 +88,7 @@
               </div>
             </div>
             </section>
-            <section class="hover-div">
+            <section data-aos="fade-left" class="hover-div">
               <div class="card">
                 <div class="card__header">
                   <img style="max-width: 100%;
@@ -116,7 +113,7 @@
           
         </div>
         <div class="container">
-          <section class="hover-div">
+          <section data-aos="fade-right" class="hover-div">
             <div class="card">
               <div class="card__header">
                 <img style="max-width: 100%;
@@ -136,7 +133,7 @@
               </div>
             </div>
             </section>
-            <section class="hover-div">
+            <section data-aos="fade-left" class="hover-div">
             <div class="card">
               <div class="card__header">
                 <img style="max-width: 100%;
@@ -162,7 +159,7 @@
           
         </div>
         <div class="container">
-          <section class="hover-div">
+          <section data-aos="fade-right" class="hover-div">
             <div class="card">
               <div class="card__header">
                 <img style="max-width: 100%;
@@ -177,7 +174,7 @@
               </div>
             </div>
             </section> 
-            <section class="hover-div">
+            <section data-aos="fade-left" class="hover-div">
               <div class="card">
                 <div class="card__header">
                   <img style="max-width: 100%;
@@ -201,7 +198,7 @@
           
         </div>
         <div class="container">
-          <section class="hover-div">
+          <section data-aos="fade-right" class="hover-div">
               <div class="card">
                 <div class="card__body">
                   <h4>International Women's Day</h4>
@@ -213,7 +210,7 @@
                 </div>
               </div>
           </section>
-          <section class="hover-div">
+          <section data-aos="fade-left" class="hover-div">
             <div class="card">
               <div class="card__header">
                 <img style="max-width: 100%;
@@ -234,7 +231,7 @@
         
       </div>
         <div class="container">
-            <section class="hover-div">
+            <section data-aos="fade-right" class="hover-div">
             <div class="card">
               <div class="card__body">
                 <h4>Drug Awareness Walkathon Program</h4>
@@ -244,7 +241,7 @@
               </div>
             </div>
             </section>
-            <section class="hover-div">
+            <section data-aos="fade-left" class="hover-div">
             <div class="card">
               <div class="card__body">
                 <h4>June 5th World Environment Day (Nakhsatravana)</h4>
@@ -260,7 +257,7 @@
         </div>
        
         <div class="container">
-            <section class="hover-div">
+            <section data-aos="fade-right" class="hover-div">
                 <div class="card">
                   <div class="card__body">
                     <h4>3rd Blood Donation Camp</h4>
@@ -276,7 +273,7 @@
                   </div>
                 </div>
                 </section>
-            <section class="hover-div">
+            <section data-aos="fade-left" class="hover-div">
             <div class="card">
               <div class="card__body">
                 <h4>2nd Blood Donation Camp</h4>
@@ -314,27 +311,27 @@
             </div>
             <div class="container">
               
-              <div class="card">
+              <div data-aos="fade-up" class="card">
                 <div class="card__header">
                   <img style="max-width: 100%;
                   display: block;
                   object-fit: cover;" src="gallery/yuva8.jpg" alt="card__image" class="card__image" width="600">
                 </div>
-                <div class="card__body">
+                <div  class="card__body">
                   <h4>Yuva Samvad- India@2047</h4>
-                  <h5 style="text-align: center;">
+                  <p style="text-align: center;">
                     On March 3rd, 2024, IIT Dharwad hosted "Yuva Samvad- India@2047," a youth dialogue 
                     focused on the nation's goal of becoming a developed nation. This engaging event featured 
                     esteemed faculty members, Dr. Kavita Devi and Prof. Keerthi Kumar, who led discussions with young minds. 
                     The program also included an essay and drawing competition,
-                     providing students with a platform to express their ideas and vision for a developed India.</h5>
+                     providing students with a platform to express their ideas and vision for a developed India.</p>
                   <div class="stage">
                       <a href="g1.html#yuva"  target="_blank" onclick="return scrollToSpecificDiv(this.href)">More</a>
                   </div>
                 </div>
               </div>
               
-                <div class="card">
+                <div data-aos="fade-up" class="card">
                   <div class="card__header">
                     <img style="max-width: 100%;
                     display: block;
@@ -342,13 +339,13 @@
                   </div>
                   <div class="card__body">
                     <h4>Yuvamanthan Model United Nations(YMUN)- Viksit Bharat@2047</h4>
-                    <h5 style="text-align: center;">The NSS wing of IIT Dharwad hosted the
+                    <p style="text-align: center;">The NSS wing of IIT Dharwad hosted the
                        "Yuvamanthan Model United Nations (YMUN) - Viksit Bharat@2047" on March 24th, 2024. 
                        This simulation exercise provided a platform for IIT Dharwad students to engage in critical 
                        discussions on pressing global issues. Divided into committees like the UN Human Rights Council 
                        (UNHRC) and the Committee on Science and Technology (CST), students debated and deliberated on 
                        real-world challenges. The event culminated in an award
-                       ceremony recognizing the outstanding performances of the participants.</h5>
+                       ceremony recognizing the outstanding performances of the participants.</p>
                        <div class="stage">
                         <a href="g1.html#ymun"  target="_blank" onclick="return scrollToSpecificDiv(this.href)">More</a>
                     </div>
@@ -359,7 +356,7 @@
           </div>
           <div class="container">
             
-              <div class="card">
+              <div data-aos="fade-up" class="card">
                 <div class="card__header">
                   <img style="max-width: 100%;
                   display: block;
@@ -367,18 +364,18 @@
                 </div>
                 <div class="card__body">
                   <h4>Cleanliness Drive at IIT Dharwad</h4>
-                  <h5 style="text-align: center;">Demonstrating their commitment to social 
+                  <p style="text-align: center;">Demonstrating their commitment to social 
                     responsibility, the NSS wing of IIT Dharwad organized successful cleanliness drives on 
                     January 16th and February 8th, 2024. Enlisting enthusiastic volunteers, they tackled waste across 
                     campus and surrounding areas, promoting a cleaner environment, fostering community pride, and highlighting
-                    the importance of proper waste management for public health and environmental well-being.</h5>
+                    the importance of proper waste management for public health and environmental well-being.</p>
                   <div class="stage">
                     <a href="g1.html#clean"  target="_blank" onclick="return scrollToSpecificDiv(this.href)">More</a>
                   </div>
                 </div>
               </div>
               
-              <div class="card">
+              <div data-aos="fade-up" class="card">
                 <div class="card__header">
                   <img style="max-width: 100%;
                   display: block;
@@ -386,13 +383,13 @@
                 </div>
                 <div class="card__body">
                   <h4>Ek Tareekh Ek Ghanta(ETEG)</h4>
-                  <h5 style="text-align: center;">
+                  <p style="text-align: center;">
                     The "Ek Tareekh Ek Ghanta" (ETEG) campaign organized by NSS, 
                     IIT Dharwad was a resounding success! Participants joined hands for a lively cleanliness drive, 
                     where we collectively cleaned up our campus surroundings. 
                     An engaging awareness session shed light on waste management and sustainable practices. Apart from this
                     IIT DHARWAD NSS team conducts a cleanliness camp at IIT DHARWAD Permanent campus every week.
-                    A group of 26 NSS volunteers of IIT DHARWAD participated in Swachh Bharat Mission.</h5>
+                    A group of 26 NSS volunteers of IIT DHARWAD participated in Swachh Bharat Mission.</p>
                   <div class="stage">
                     <a href="g1.html#eteg"  target="_blank" onclick="return scrollToSpecificDiv(this.href)">More</a>
                   </div>
@@ -404,7 +401,7 @@
           </div>
           <div class="container">
             
-              <div class="card">
+              <div data-aos="fade-up" class="card">
                 <div class="card__header">
                   <img style="max-width: 100%;
                   display: block;
@@ -412,13 +409,13 @@
                 </div>
                 <div class="card__body">
                   <h4>Har Ghar Tiranga Awareness Program</h4>
-                  <h5 style="text-align: center;">In the spirit of national pride, IIT Dharwad's NSS 
+                  <p style="text-align: center;">In the spirit of national pride, IIT Dharwad's NSS 
                     unit organized a special awareness program and flag distribution ceremony to promote
-                     the "Har Ghar Tiranga" initiative on August 14, 2023, in the run-up to Independence Day.</h5>
+                     the "Har Ghar Tiranga" initiative on August 14, 2023, in the run-up to Independence Day.</p>
                 </div>
               </div>
 
-                <div class="card">
+                <div data-aos="fade-up" class="card">
                   <div class="card__header">
                     <img style="max-width: 100%;
                     display: block;
@@ -426,12 +423,12 @@
                   </div>
                   <div class="card__body">
                     <h4>Voter Awareness Program</h4>
-                    <h5 style="text-align: center;">
+                    <p style="text-align: center;">
                         The National Service Scheme (NSS) Unit of Indian Institute of Technology DHARWAD conducted the Voter 
                         Awareness Programme on 03rd May 2023. IIT Dh NSS Unit to ensure that people understand their 
                         right as voters and exercise that right with full knowledge and responsibility. to educate the voter 
                         about the importance of voting in democratic countries like India.
-                    </h5>
+                    </p>
                     <div class="stage">
                       <a href="g1.html#vote"  target="_blank" onclick="return scrollToSpecificDiv(this.href)">More</a>
                     </div>
@@ -442,18 +439,18 @@
           </div>
           <div class="container">
             
-                <div class="card">
+                <div data-aos="fade-up" class="card">
                   <div class="card__body">
                     <h4>International Women's Day</h4>
-                    <h5 style="text-align: center;">The IITDh NSS unit conducted a Group Completions for Women’s 
+                    <p style="text-align: center;">The IITDh NSS unit conducted a Group Completions for Women’s 
                         events are Spot Painting Competition, Poster Making Competition, 
                         Kavithai competition on 8 th March 2023 on the account of International Women’s 
                         day with the theme “THE REAL ARCHITECTS OF SOCIETY” Students from various departments 
-                        participated and best essays were awarded to III-year BTECH Students.</h5>
+                        participated and best essays were awarded to III-year BTECH Students.</p>
                   </div>
                 </div>
             
-              <div class="card">
+              <div data-aos="fade-up" class="card">
                 <div class="card__header">
                   <img style="max-width: 100%;
                   display: block;
@@ -461,36 +458,36 @@
                 </div>
                 <div class="card__body">
                   <h4>Panch PrAN Pledge, VEErON kA Vandan, VasudhA Vandan PROGRAM</h4>
-                  <h5 style="text-align: center;">
+                  <p style="text-align: center;">
                     The National Service Scheme (NSS) Unit of Indian Institute of Technology DHARWAD conducted the 
   <br>1. PrAN Pledge
   <br>2. VEErON kA Vandan 
   <br>3. VasudhA Vandan 
-                  </h5>
+                  </p>
                 </div>
               </div>
              
           
         </div>
           <div class="container">
-              
-              <div class="card">
+               
+              <div data-aos="fade-up" class="card">
                 <div class="card__body">
                   <h4>Drug Awareness Walkathon Program</h4>
-                  <h5 style="text-align: center;">A large number of Indian Institute Of Technology DHARWAD Students 
+                  <p style="text-align: center;">A large number of Indian Institute Of Technology DHARWAD Students 
                     and other college  students participated in a walkathon, “Say ‘No’ to Drugs”,
-                     from the KCD College Ground to the KCD College main Building here on Sunday (25/06/2023).</h5>
+                     from the KCD College Ground to the KCD College main Building here on Sunday (25/06/2023).</p>
                 </div>
               </div>
              
-              <div class="card">
+              <div data-aos="fade-up" class="card">
                 <div class="card__body">
                   <h4>June 5th World Environment Day (Nakhsatravana)</h4>
-                  <h5 style="text-align: center;">
+                  <p style="text-align: center;">
                     NSS Unit of IIT DHARWAD conducted the NaKHsatravana plantation program on 
                     05th June 2023 on the occasion of World Environment Day at the permanent campus near the KRDC Building. 
                     This NaKHsatravana program is a significant symbol of working towards change and a better future for all.
-                  </h5>
+                  </p>
                 </div>
               </div>
               
@@ -499,10 +496,10 @@
          
           <div class="container">
               
-                  <div class="card">
+                  <div data-aos="fade-up" class="card">
                     <div class="card__body">
                       <h4>3rd Blood Donation Camp</h4>
-                      <h5 style="text-align: justify;">
+                      <p style="text-align: justify;">
                           The National Service Scheme (NSS) Unit of Indian Institute of Technology 
                           DHARWAD conducted the 3rd Blood Donation Camp on 12th August 2023 on the occasion of 77th Independence Day.
                            The 3rd Blood Donation Camp was inaugurated by Prof. VenkappayyA R  dEsAi, Director-IIT DHARWAD in the 
@@ -510,24 +507,24 @@
                            The campaign got an overwhelming response as Seventy five donors came forward for the noble cause of 
                            donating blood to save precious lives. NSS Unit of IIT DHARWAD will
                            continue to contribute to the society through various activities and programs in the days to come.
-                      </h5>
+                      </p>
                     </div>
                   </div>
-              <div class="card">
+              <div data-aos="fade-up" class="card">
                 <div class="card__body">
                   <h4>2nd Blood Donation Camp</h4>
-                  <h5 style="text-align: justify;">
+                  <p style="text-align: justify;">
                       The National Service Scheme (NSS) Unit of Indian Institute of Technology DHARWAD conducted the 2nd Blood Donation Camp on 12th August 2023 on the occasion of 77th Independence Day.
                       To mark this occasion, a social service initiative was taken up in the form of voluntary Blood donation 
                       on 22 nd January 2023, campaign with the support of DHARWAD Blood Bank. The campaign got an
                        overwhelming response as Ninety-four donors came forward for the noble cause of saving lives.
-                  </h5>
+                  </p>
                   
                 </div>
               </div>
               </div>
     </div>
-    <footer class="site-footer">
+    <footer data-aos="fade-right" class="site-footer">
       <div class="container">
         <div class="row">
         <div class="col-sm-12 col-md-6">
@@ -578,5 +575,9 @@
     </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
