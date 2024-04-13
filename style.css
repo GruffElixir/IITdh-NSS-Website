@@ -629,6 +629,7 @@ min-width: 100%;
 }
 .footer-links li:hover{
   color: #007bb6;
+  cursor: pointer;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
